@@ -4,8 +4,4 @@
 
 <script setup></script>
 
-<style lang="scss" scoped>
-body {
-  @apply text-black;
-}
-</style>
+<style lang="scss" scoped></style>

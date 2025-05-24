@@ -1,20 +1,26 @@
 <template>
-  <div class="bg-white rounded-lg shadow p-4">
+  <div
+    class="border border-background-secondary rounded-lg p-4 dark:bg-background-secondary"
+  >
     <!-- header -->
     <div class="flex justify-between items-center mb-4">
-      <a class="font-bold flex gap-1 items-center" :href="project.html_url">
+      <a
+        class="font-bold flex gap-1 items-center text-text-primary"
+        :href="project.html_url"
+        target="_blank"
+      >
         {{ project.name }}
         <Icon name="flowbite:arrow-up-right-from-square-outline"></Icon>
       </a>
       <div
         v-if="project.fork"
-        class="border rounded p-2 text-green-800 shrink-0 font-bold flex items-center gap-1"
+        class="border rounded p-2 text-green-800 dark:text-green-400 shrink-0 font-bold flex items-center gap-1"
       >
         <Icon name="tabler:arrow-fork"></Icon> Forked
       </div>
     </div>
     <!-- description -->
-    <div class="text-gray-500">
+    <div class="text-text-secondary">
       {{ project.description || "---" }}
     </div>
   </div>

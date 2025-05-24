@@ -1,14 +1,20 @@
 <template>
   <nav class="flex justify-between py-8">
     <!-- logo -->
-    <div class="text-black font-bold text-2xl">
+    <div class="text-text-primary font-bold text-2xl">
       <NuxtLink to="/" class="link-hover"> Yousef </NuxtLink>
     </div>
+
     <ul class="flex gap-5 text-lg font-medium">
       <li><NuxtLink to="/" class="link-hover"> Main</NuxtLink></li>
       <li><NuxtLink to="about" class="link-hover"> About</NuxtLink></li>
       <li><NuxtLink to="projects" class="link-hover"> Projects</NuxtLink></li>
     </ul>
+
+    <!-- theme switcher -->
+    <ClientOnly>
+      <ThemeSwitcher />
+    </ClientOnly>
   </nav>
 </template>
 

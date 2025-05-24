@@ -3,12 +3,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#FFC300",
-        black: "#0B0909",
-        gray: {
-          dark: "#8C8C8C",
-          light: "#D6D6D6",
-        },
+        primary: "var(--primary-color)",
+        "background-primary": "var(--background-primary)",
+        "background-secondary": "var(--background-secondary)",
+        "text-primary": "var(--text-primary)",
+        "text-secondary": "var(--text-secondary)",
+        error: "var(--error)",
       },
     },
   },
